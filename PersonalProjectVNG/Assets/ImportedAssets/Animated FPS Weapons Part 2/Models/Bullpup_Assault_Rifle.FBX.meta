@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: 62b1a6210035a1c42b708dd94010fc83
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BSP_rig
+    100002: BSP_rig_Bullet
+    100004: BSP_rig_Clip
+    100006: BSP_rig_Grenade_Body
+    100008: BSP_rig_Grenade_Safety_Pin
+    100010: BSP_rig_Gun
+    100012: BSP_rig_Head
+    100014: BSP_rig_HeadTop
+    100016: BSP_rig_Knife
+    100018: BSP_rig_L_Arm
+    100020: BSP_rig_L_Finger1
+    100022: BSP_rig_L_Finger11
+    100024: BSP_rig_L_Finger12
+    100026: BSP_rig_L_Finger1Nub
+    100028: BSP_rig_L_Finger2
+    100030: BSP_rig_L_Finger21
+    100032: BSP_rig_L_Finger22
+    100034: BSP_rig_L_Finger2Nub
+    100036: BSP_rig_L_Finger3
+    100038: BSP_rig_L_Finger31
+    100040: BSP_rig_L_Finger32
+    100042: BSP_rig_L_Finger3Nub
+    100044: BSP_rig_L_Finger4
+    100046: BSP_rig_L_Finger41
+    100048: BSP_rig_L_Finger42
+    100050: BSP_rig_L_Finger4Nub
+    100052: BSP_rig_L_Finger5
+    100054: BSP_rig_L_Finger51
+    100056: BSP_rig_L_Finger52
+    100058: BSP_rig_L_Finger5Nub
+    100060: BSP_rig_L_ForeArm
+    100062: BSP_rig_L_Hand
+    100064: BSP_rig_L_Shoulder
+    100066: BSP_rig_Neck
+    100068: BSP_rig_Operating_Handle
+    100070: BSP_rig_R_Finger
+    100072: BSP_rig_R_Finger11
+    100074: BSP_rig_R_Finger12
+    100076: BSP_rig_R_Finger1Nub
+    100078: BSP_rig_R_Finger2
+    100080: BSP_rig_R_Finger21
+    100082: BSP_rig_R_Finger22
+    100084: BSP_rig_R_Finger2Nub
+    100086: BSP_rig_R_Finger3
+    100088: BSP_rig_R_Finger31
+    100090: BSP_rig_R_Finger32
+    100092: BSP_rig_R_Finger3Nub
+    100094: BSP_rig_R_Finger4
+    100096: BSP_rig_R_Finger41
+    100098: BSP_rig_R_Finger42
+    100100: BSP_rig_R_Finger4Nub
+    100102: BSP_rig_R_Finger5
+    100104: BSP_rig_R_Finger51
+    100106: BSP_rig_R_Finger52
+    100108: BSP_rig_R_Finger5Nub
+    100110: BSP_rig_RightArm
+    100112: BSP_rig_RightForeArm
+    100114: BSP_rig_RightHand
+    100116: BSP_rig_RightShoulder
+    100118: BSP_rig_sight
+    100120: BSP_rig_Spine1
+    100122: BSP_rig_Trigger
+    100124: Bullets
+    100126: //RootNode
+    100128: Collimator
+    100130: FIRESPOT
+    100132: Grenade Body
+    100134: hands
+    100136: Knife
+    100138: Magazine
+    100140: Operating Handle
+    100142: Red_Dot_Sight
+    100144: Safety Pin
+    100146: SMOKE
+    100148: Trigger
+    100150: Weapon Body
+    400000: BSP_rig
+    400002: BSP_rig_Bullet
+    400004: BSP_rig_Clip
+    400006: BSP_rig_Grenade_Body
+    400008: BSP_rig_Grenade_Safety_Pin
+    400010: BSP_rig_Gun
+    400012: BSP_rig_Head
+    400014: BSP_rig_HeadTop
+    400016: BSP_rig_Knife
+    400018: BSP_rig_L_Arm
+    400020: BSP_rig_L_Finger1
+    400022: BSP_rig_L_Finger11
+    400024: BSP_rig_L_Finger12
+    400026: BSP_rig_L_Finger1Nub
+    400028: BSP_rig_L_Finger2
+    400030: BSP_rig_L_Finger21
+    400032: BSP_rig_L_Finger22
+    400034: BSP_rig_L_Finger2Nub
+    400036: BSP_rig_L_Finger3
+    400038: BSP_rig_L_Finger31
+    400040: BSP_rig_L_Finger32
+    400042: BSP_rig_L_Finger3Nub
+    400044: BSP_rig_L_Finger4
+    400046: BSP_rig_L_Finger41
+    400048: BSP_rig_L_Finger42
+    400050: BSP_rig_L_Finger4Nub
+    400052: BSP_rig_L_Finger5
+    400054: BSP_rig_L_Finger51
+    400056: BSP_rig_L_Finger52
+    400058: BSP_rig_L_Finger5Nub
+    400060: BSP_rig_L_ForeArm
+    400062: BSP_rig_L_Hand
+    400064: BSP_rig_L_Shoulder
+    400066: BSP_rig_Neck
+    400068: BSP_rig_Operating_Handle
+    400070: BSP_rig_R_Finger
+    400072: BSP_rig_R_Finger11
+    400074: BSP_rig_R_Finger12
+    400076: BSP_rig_R_Finger1Nub
+    400078: BSP_rig_R_Finger2
+    400080: BSP_rig_R_Finger21
+    400082: BSP_rig_R_Finger22
+    400084: BSP_rig_R_Finger2Nub
+    400086: BSP_rig_R_Finger3
+    400088: BSP_rig_R_Finger31
+    400090: BSP_rig_R_Finger32
+    400092: BSP_rig_R_Finger3Nub
+    400094: BSP_rig_R_Finger4
+    400096: BSP_rig_R_Finger41
+    400098: BSP_rig_R_Finger42
+    400100: BSP_rig_R_Finger4Nub
+    400102: BSP_rig_R_Finger5
+    400104: BSP_rig_R_Finger51
+    400106: BSP_rig_R_Finger52
+    400108: BSP_rig_R_Finger5Nub
+    400110: BSP_rig_RightArm
+    400112: BSP_rig_RightForeArm
+    400114: BSP_rig_RightHand
+    400116: BSP_rig_RightShoulder
+    400118: BSP_rig_sight
+    400120: BSP_rig_Spine1
+    400122: BSP_rig_Trigger
+    400124: Bullets
+    400126: //RootNode
+    400128: Collimator
+    400130: FIRESPOT
+    400132: Grenade Body
+    400134: hands
+    400136: Knife
+    400138: Magazine
+    400140: Operating Handle
+    400142: Red_Dot_Sight
+    400144: Safety Pin
+    400146: SMOKE
+    400148: Trigger
+    400150: Weapon Body
+    2100000: hands
+    2100002: Bullpup_Assault_Rifle
+    2100004: Bullpup_Assault_Rifle_Collimator_Glass
+    2100006: Red_Dot_Sight
+    2100008: Grenade
+    4300000: hands
+    4300002: Knife
+    4300004: Bullets
+    4300006: Collimator
+    4300008: Magazine
+    4300010: Operating Handle
+    4300012: Red_Dot_Sight
+    4300014: Trigger
+    4300016: Weapon Body
+    4300018: Grenade Body
+    4300020: Safety Pin
+    9500000: //RootNode
+    13700000: Bullets
+    13700002: Collimator
+    13700004: Grenade Body
+    13700006: hands
+    13700008: Knife
+    13700010: Magazine
+    13700012: Operating Handle
+    13700014: Red_Dot_Sight
+    13700016: Safety Pin
+    13700018: Trigger
+    13700020: Weapon Body
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bullpup_Assault_Rifle
+    second: {fileID: 2100000, guid: 927a138353c6d2045b6c5c1a55a037a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bullpup_Assault_Rifle_Collimator_Glass
+    second: {fileID: 2100000, guid: e0c9690b077c70549b576080935a5f6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grenade
+    second: {fileID: 2100000, guid: a0dbafe9be5f8ed408339cabdb2c3073, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_Dot_Sight
+    second: {fileID: 2100000, guid: ea8ba8b5315760746bb06d7a0e82338e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hands
+    second: {fileID: 2100000, guid: 501b285634c757343a2d12f0359777ce, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
