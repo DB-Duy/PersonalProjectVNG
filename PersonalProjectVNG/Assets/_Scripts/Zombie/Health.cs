@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
   [SerializeField]
   private int _scoreOnKill = 10;
   private readonly int DieHash = Animator.StringToHash("Death");
-
+  [SerializeField]
   private Animator _animator;
   private GameFlowManager _gameFlow;
 

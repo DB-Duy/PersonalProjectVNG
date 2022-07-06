@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ZombieSpawnManager : MonoBehaviour
 {
+  [SerializeField]
   private ObjectPool _zombiePool;
   [SerializeField]
   private float _spawnRate;

@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerHealthUI : MonoBehaviour
 {
   private StringBuilder str = new StringBuilder();
+  [SerializeField]
   private TMP_Text _playerHealthText;
   [SerializeField]
   private Health _playerHealth;

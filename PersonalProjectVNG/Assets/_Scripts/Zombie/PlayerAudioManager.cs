@@ -8,7 +8,7 @@ public class PlayerAudioManager : MonoBehaviour
   private AudioClip[] _damagedClips;
   [SerializeField]
   private AudioClip[] _deathClips;
-
+  [SerializeField]
   private AudioSource _audioSource;
 
   private void OnValidate()

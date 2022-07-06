@@ -12,9 +12,9 @@ public class ZombieAudioManager : MonoBehaviour
   private float _zombieSoundChance = 0.4f;
   [SerializeField]
   private ObjectPool _zombiePool;
-
+  [SerializeField]
   private ObjectPool _audioSourcePool;
-
+  [SerializeField]
   private AudioSource _audio;
   private void OnValidate()
   {
