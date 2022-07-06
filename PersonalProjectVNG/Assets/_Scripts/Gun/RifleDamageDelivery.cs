@@ -7,8 +7,7 @@ public class RifleDamageDelivery : MonoBehaviour
 {
   [SerializeField]
   private Transform _aimingCamera;
-  [SerializeField]
-  private GameObject _hitEffect;
+
 
   [SerializeField]
   private int _damage;
@@ -25,7 +24,13 @@ public class RifleDamageDelivery : MonoBehaviour
   private float _currentBloom;
   private float _bloomInterval = 0.3f;
 
+  [SerializeField]
+  private ObjectPool _dirtSplatterPool;
+  [SerializeField]
+  private ObjectPool _bloodSplatterPool;
+
   public void OnShoot() => PerformRaycasting();
+
 
 
   private void PerformRaycasting()
@@ -75,8 +80,14 @@ public class RifleDamageDelivery : MonoBehaviour
     {
       return;
     }
-
     Quaternion holeRotation = Quaternion.LookRotation(hitInfo.normal);
-    GameObject hitEffect = Instantiate(_hitEffect, hitInfo.point, holeRotation, hitInfo.collider.transform);
+    if (hitInfo.collider.gameObject.CompareTag("Enemies"))
+    {
+      GameObject hitEffect = _bloodSplatterPool.SpawnObject(hitInfo.point, holeRotation);
+    }
+    else
+    {
+      GameObject hitEffect = _dirtSplatterPool.SpawnObject(hitInfo.point, holeRotation);
+    }
   }
 }

@@ -19,6 +19,12 @@ public class GameFlowManager : MonoBehaviour
   {
     _roundScore = 0;
     UpdateScore();
+    InvokeRepeating(nameof(IncrementScore), 0f, 1f);
+  }
+  private void IncrementScore()
+  {
+    _roundScore++;
+    UpdateScore();
   }
 
   public void AddScore(int score)
@@ -40,6 +46,7 @@ public class GameFlowManager : MonoBehaviour
 
   public void OnDeath()
   {
+    CancelInvoke();
     foreach (Canvas canvas in _deactiveOnDeathCanvas)
     {
       canvas.gameObject.SetActive(false);
