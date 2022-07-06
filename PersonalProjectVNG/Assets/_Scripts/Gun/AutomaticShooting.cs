@@ -14,7 +14,7 @@ public class AutomaticShooting : Shooting
 
     private void Update()
     {
-        _isFiring = Input.GetButton("Fire1");
+        _isFiring = _buttonManager.IsFiring;
 
         if (_isFiring)
         {

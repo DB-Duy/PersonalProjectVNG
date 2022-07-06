@@ -4620,6 +4620,7 @@ GameObject:
   - component: {fileID: 4478586135792965276}
   - component: {fileID: 8697177924107409105}
   - component: {fileID: 5336393242053225458}
+  - component: {fileID: 8434688606976028642}
   m_Layer: 6
   m_Name: TZ_Soldier_03 1
   m_TagString: Enemies
@@ -4806,6 +4807,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   HealthValue: 0
+  OnDamageTaken:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8434688606976028642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a29a871e726eba43b71e904bf3b9361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 5
+  _playerHealth: {fileID: 0}
 --- !u!1 &160786
 GameObject:
   m_ObjectHideFlags: 0

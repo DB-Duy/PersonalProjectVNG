@@ -9,14 +9,14 @@ public class ZombieAttack : MonoBehaviour
   [SerializeField]
   private Health _playerHealth;
 
-
-  public void OnAttack1()
+  private void Start()
   {
-    _playerHealth.TakeDamage(_damage);
+    _playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
   }
-  public void OnAttack2()
+
+  public void OnAttack()
   {
-    _playerHealth.TakeDamage(_damage);
+     _playerHealth.TakeDamage(_damage);
   }
 
 }

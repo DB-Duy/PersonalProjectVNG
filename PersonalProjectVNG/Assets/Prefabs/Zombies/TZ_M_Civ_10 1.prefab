@@ -2885,6 +2885,7 @@ GameObject:
   - component: {fileID: -11944315711204325}
   - component: {fileID: -6529083623688273305}
   - component: {fileID: 6406516777191513957}
+  - component: {fileID: -5975222212521394478}
   m_Layer: 6
   m_Name: TZ_M_Civ_10 1
   m_TagString: Enemies
@@ -3071,6 +3072,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   HealthValue: 0
+  OnDamageTaken:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-5975222212521394478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a29a871e726eba43b71e904bf3b9361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 5
+  _playerHealth: {fileID: 0}
 --- !u!1 &137498
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,23 +10,34 @@ public class GrenadeShooting : Shooting
   private ObjectPool _grenadeBulletPool;
 
   [SerializeField]
+  private float _fireCooldown = 0.2f;
+
+  private float _lastShotTime;
+
+  [SerializeField]
   protected Transform _firingPos;
-  private void OnValidate()
+  private void Start()
   {
+    _animator = GetComponent<Animator>();
+    _buttonManager = GameObject.FindGameObjectWithTag("ButtonManager").GetComponent<ButtonManager>();
     _grenadeBulletPool = GetComponent<ObjectPool>();
   }
 
   private void Update()
   {
-    if (Input.GetButtonDown("Fire1"))
+    if (_buttonManager.FireButtonPressed)
     {
       Fire();
     }
   }
   protected override void Fire()
   {
-    _animator.SetTrigger(ShootTrigger);
-    base.Fire();
+    if (Time.time - _lastShotTime >= _fireCooldown)
+    {
+      _animator.SetTrigger(ShootTrigger);
+      base.Fire();
+      _lastShotTime = Time.time;
+    }
   }
   public void AddProjectile()
   {

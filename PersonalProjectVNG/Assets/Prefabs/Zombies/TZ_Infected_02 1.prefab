@@ -6847,6 +6847,7 @@ GameObject:
   - component: {fileID: -5876093956466738752}
   - component: {fileID: -5616028666570029195}
   - component: {fileID: -8760074064111608647}
+  - component: {fileID: 4647316568466957420}
   m_Layer: 6
   m_Name: TZ_Infected_02 1
   m_TagString: Enemies
@@ -7033,6 +7034,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   HealthValue: 0
+  OnDamageTaken:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4647316568466957420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a29a871e726eba43b71e904bf3b9361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 5
+  _playerHealth: {fileID: 0}
 --- !u!1 &194382
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,9 @@ public class ZombieSpawnManager : MonoBehaviour
   [SerializeField]
   private float _spawnRate;
   [SerializeField]
+  private float _increaseSpawnRateTime;
+  private float _startTime;
+  [SerializeField]
   private Transform[] _spawnLocations;
 
   [SerializeField]
@@ -17,10 +20,25 @@ public class ZombieSpawnManager : MonoBehaviour
   {
     _zombiePool = GetComponent<ObjectPool>();
   }
+  private float SpawnFrequency()
+  {
+    return 1 / _spawnRate;
+  }
+  private void Update()
+  {
+    if (Time.time - _startTime >= _increaseSpawnRateTime)
+    {
+      _spawnRate += _spawnRate * (1f / 10f);
+      CancelInvoke();
+      InvokeRepeating(nameof(SpawnRandomZombie), 2f, SpawnFrequency());
+      _startTime = Time.time;
+    }
+  }
 
   private void Start()
   {
-    InvokeRepeating(nameof(SpawnRandomZombie), 2f, _spawnRate);
+    InvokeRepeating(nameof(SpawnRandomZombie), 2f, SpawnFrequency());
+    _startTime = Time.time;
   }
 
   private void SpawnRandomZombie()

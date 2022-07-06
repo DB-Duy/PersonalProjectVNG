@@ -8,6 +8,8 @@ public class GunSwitcher : MonoBehaviour
 
   private GameObject _currentGun;
 
+  private int gunIndex = 0;
+
   private bool _isEnable = true;
   private void Start()
   {
@@ -17,6 +19,11 @@ public class GunSwitcher : MonoBehaviour
       gun.SetActive(false);
     }
     SwitchToGun(0);
+  }
+  public void CycleGun()
+  {
+    gunIndex++;
+    SwitchToGun(gunIndex % guns.Length);
   }
 
   public void DisableGun()

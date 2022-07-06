@@ -9,6 +9,8 @@ TagManager:
   - Weapons
   - Enemies
   - Head
+  - ButtonManager
+  - GameFlowManager
   layers:
   - Default
   - TransparentFX

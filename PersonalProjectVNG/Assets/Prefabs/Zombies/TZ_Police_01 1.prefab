@@ -3925,6 +3925,7 @@ GameObject:
   - component: {fileID: -5860993111449261130}
   - component: {fileID: -8795263740989449392}
   - component: {fileID: -930575490968881072}
+  - component: {fileID: -799705590380611194}
   m_Layer: 6
   m_Name: TZ_Police_01 1
   m_TagString: Enemies
@@ -4111,6 +4112,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   HealthValue: 0
+  OnDamageTaken:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-799705590380611194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a29a871e726eba43b71e904bf3b9361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 5
+  _playerHealth: {fileID: 0}
 --- !u!1 &160444
 GameObject:
   m_ObjectHideFlags: 0
